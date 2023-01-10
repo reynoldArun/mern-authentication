@@ -14,11 +14,6 @@ app.use(express.json())
 app.disable('x-powered-by')
 app.use('/api', router)
 
-
-app.get('/', (req, res ) => {
-    res.send("testing")
-})
-
 app.listen(port, () => {
     ConnectDB(url)
     console.log(`Server is up & running on port ${port}`)

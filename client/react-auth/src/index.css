@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Rowdies&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Rowdies", cursive;
+}
+
+main {
+  display: flex;
+  height: 100vh;
+  background: #a9bdda;
+}
+
+.containerLogin {
+  width: 400px;
+  height: 400px;
+  background-color: #191b1e;
+  color: whitesmoke;
+  margin: auto;
+  border-radius: 5%;
+  text-align: center;
+  padding-top: 50px;
+  box-shadow: 10px 10px 10px grey;
+}
+
+.containerReg {
+  width: 400px;
+  height: 450px;
+  background-color: #191b1e;
+  color: whitesmoke;
+  margin: auto;
+  border-radius: 5%;
+  text-align: center;
+  padding-top: 50px;
+  box-shadow: 10px 10px 10px grey;
+}
+
+.inputblockLogin {
+  margin-top: 15px;
+}
+
+.inputblockLogin > label {
+  font-size: 20px;
+}
+
+.btn {
+  width: 100px;
+  height: 30px;
+  margin: 30px 0px;
+  background: purple;
+  border: none;
+  color: whitesmoke;
+  font-family: "Rowdies", cursive;
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+
+input[type="username"],
+input[type="password"],
+input[type="email"] {
+  height: 30px;
+  width: 200px;
+  margin: 10px 0px;
+  padding-left: 10px;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+
+/* dashboard */
+.dashboard {
+  margin: auto;
+  text-align: center;
+}
+
+.dashboard > h1 {
+  font-size: 32px;
+}

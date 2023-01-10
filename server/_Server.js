@@ -9,7 +9,9 @@ const port = process.env.PORT || 3001
 const url = 'mongodb://127.0.0.1:27017'
 
 //middleware
-app.use(cors());
+app.use(cors({
+    origin: 'http://localhost:5173'
+}));
 app.use(express.json())
 app.disable('x-powered-by')
 app.use('/api', router)

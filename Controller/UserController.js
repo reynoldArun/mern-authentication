@@ -63,7 +63,18 @@ const loginUser = async(req, res) => {
     }
 }
 
+const DashBoard = async(req, res) => {
+    try {
+        res.send("dashboard page")
+    } catch (error) {
+        return res.status(500).json({
+            errorMsg: "Something went wrong!"
+        })
+    }
+}
+
 module.exports = {
     CreateUser,
-    loginUser
+    loginUser,
+    DashBoard
 }
